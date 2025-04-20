@@ -96,8 +96,9 @@ h4 {
 }
 .price-wrapper {
   display: flex;
-  gap: 24px;
-  margin: 10px auto;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
 }
 .button-37 {
   background-color: initial;
@@ -226,6 +227,38 @@ footer {
         #buyButton:hover {
             background-color: #007B9E;
         }
+.filter-buttons {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  background: #45a049;
+  border-radius: 4px;
+  color: white;
+  font-family: "Tektur", sans-serif;
+}
+
+.filter-btn.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.item {
+  transition: all 0.3s ease;
+}
+
+.item[style*="display: none"] {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}        
 @media screen and (max-width: 767.99px) {
   .menu__list {
     gap: 16px;
@@ -252,4 +285,13 @@ footer {
         height: 25px;
         padding: 0 5px
     }
+    .filter-buttons {
+  margin: 15px 0;
+}
+
+.filter-btn {
+  padding: 5px 8px;
+  margin: 0 5px;
+}
+
 }
