@@ -234,3 +234,19 @@ footer {
   height: 30px;
 }
 }
+@media screen and (max-width: 575.99px) {
+  .item-row {
+    gap: 8px;
+  }
+  .container-main {
+    margin: 0px 5px;
+}
+.price-wrapper {
+    gap: 5px;
+    margin: 10px auto;
+}
+.button-37 {
+        height: 25px;
+        padding: 0 5px
+    }
+}
