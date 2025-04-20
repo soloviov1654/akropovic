@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" />
   </head>
   <body>
     <header id="header">
@@ -44,16 +45,16 @@
 </div>
       <div class="item-row">
         <div class="item">
-          <div class="swiper">
+          <div class="swiper lightgallery-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="src/3755/1.jpg" alt="item1" />
+                <a href="src/3755/1.jpg"><img src="src/3755/1.jpg" alt="item1" /></a>
               </div>
               <div class="swiper-slide">
-                <img src="src/3755/2.jpg" alt="item1" />
+                <a href="src/3755/2.jpg"><img src="src/3755/2.jpg" alt="item1" /></a>
               </div>
               <div class="swiper-slide">
-                <img src="src/3755/3.jpg" alt="item1" />
+                <a href="src/3755/3.jpg"><img src="src/3755/3.jpg" alt="item1" /></a>
               </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -297,11 +298,14 @@
             </div>
 
             <button type="submit">Замовити</button>
+            
           </form>
         </div>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
     <script>
       const swiper = new Swiper(".swiper", {
         direction: "horizontal",
@@ -392,6 +396,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+</script>
+<script>
+  document.querySelectorAll('.lightgallery-swiper').forEach((gallery) => {
+    lightGallery(gallery, {
+      selector: 'a',
+      plugins: [lgZoom],
+      speed: 300,
+    });
+  });
 </script>
   </body>
 </html>
