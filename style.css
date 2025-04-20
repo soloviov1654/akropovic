@@ -137,12 +137,15 @@ footer {
 }
 [type="text"]  {
   color: black;
+  font-family: "Tektur", sans-serif;
 }
 [type="tel"]  {
   color: black;
+  font-family: "Tektur", sans-serif;
 }
 #address {
   color: black;
+  font-family: "Tektur", sans-serif;
 }
 .modal {
             display: none;
@@ -165,7 +168,7 @@ footer {
             margin: 15% auto;
             padding: 20px;
             border: 1px solid #888;
-            width: 80%;
+            width: 70%;
             max-width: 500px;
             border-radius: 5px;
         }
