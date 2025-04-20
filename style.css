@@ -84,8 +84,8 @@ h4 {
   }
 }
 .option-wrapper {
-  border: 1px solid #b1b1b1;
-  border-radius: 25px;
+  /* border: 1px solid #b1b1b1;
+  border-radius: 25px; */
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -305,6 +305,9 @@ h4 {
 }
 }
 @media screen and (max-width: 575.99px) {
+  h4 {
+  font-size: 2.3vw;
+}
   .item-row {
     gap: 8px;
   }
