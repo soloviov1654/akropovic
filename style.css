@@ -21,12 +21,16 @@ img {
   max-width: 100%;
   height: auto;
 }
-h4 {
+h2 {
 	font-size: 4vw;
+  margin-bottom: 10px;
 }
-h5 {
+h3 {
 	font-size: 3.5vw;
 	color: #E62C03;
+}
+h4 {
+  font-size: 2vw;
 }
 .swiper {
   width: 43vw;
@@ -79,7 +83,22 @@ h5 {
 	border-radius: 25px;
   }
 }
-
+.option-wrapper {
+  border: 1px solid #b1b1b1;
+  border-radius: 25px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.item_option {
+  color: #fee607;
+}
+.price-wrapper {
+  display: flex;
+  gap: 24px;
+  margin: 10px auto;
+}
 .button-37 {
   background-color: initial;
   background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
@@ -116,43 +135,94 @@ footer {
   border-top: 1px solid #b1b1b1;
   height: 400px;
 }
-/* .btn-burger {
-	border: none;
-	background: none;
-	z-index: 1;
-	width: 42px;
-	height: 18px;
-	position: relative;
-	span {
-		position: absolute;
-		top: 0;
-		left: 0;
-		display: inline-block;
-		height: 2px;
-		width: 100%;
-		background-image: linear-gradient(245deg, #e3f300 0%, #e7d153 100%);
-		transition: .3s;
-		&:nth-child(2){
-			top: 9px;
-		}
-		&:last-child{
-			top: 18px;
-		}
-	}
-	&.active {
-		span{
-		transform: rotate(45deg);
-		top: 8px;
-		&:nth-child(2){
-		transform: rotate(-45deg);
-		top: 8px;
-		}
-		&:last-child{
-			opacity: 0;
-		}
-		}
-	}
-} */
+[type="text"]  {
+  color: black;
+}
+[type="tel"]  {
+  color: black;
+}
+#address {
+  color: black;
+}
+.modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+            h2 , h3 , h4 , h5 , label {
+              color: black;
+            }
+        }
+        
+        .modal-content {
+          
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 5px;
+        }
+        
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close:hover {
+            color: black;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        #buyButton {
+            padding: 12px 24px;
+            background-color: #008CBA;
+            font-size: 18px;
+        }
+        
+        #buyButton:hover {
+            background-color: #007B9E;
+        }
 @media screen and (max-width: 767.99px) {
   .menu__list {
     gap: 16px;
