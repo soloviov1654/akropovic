@@ -181,6 +181,9 @@ footer {
   label {
     color: black;
   }
+  h2 {
+    font-size: 24px;
+  }
 }
 
 .modal-content {
@@ -384,7 +387,7 @@ align-items: center;
             font-size: 3vw;
         }
     }
-    .button-37 {
+    .button-37 , button {
       padding: 4px 10px;
     height: 45px;
     }
@@ -421,11 +424,18 @@ align-items: center;
       height: 40px;
     }
   }
-  .button-37 {
+  .button-37 , button {
       padding: 4px 8px;
     height: 38px;
     }
-
+    .modal {
+      label {
+        font-size: 16px;
+      }
+      h2 {
+    font-size: 18px;
+  }
+    }
 }
 @media screen and (max-width: 481.99px) {
   .item {
@@ -444,11 +454,24 @@ align-items: center;
     h3 {
       font-size: 3vw;
     }
-    .button-37 {
+    .button-37 , button {
       padding: 0 5px;
     height: 25px;
     font-size: 10px;
     }
   }
+  .modal {
+    .modal-content {
+      width: 80%;
+    }
+      label {
+        font-size: 14px;
+      }
+      h2 {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+    }
 }
 
