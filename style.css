@@ -324,6 +324,7 @@ button {
     display: flex;
     justify-content: space-around;
     gap: 25px;
+    margin-bottom: 25px;
   }
   .steps-title {
     text-align: center;
