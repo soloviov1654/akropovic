@@ -9,6 +9,11 @@ html {
   background-color: #00000a;
   scroll-behavior: smooth;
 }
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
 a {
   text-decoration: none;
   font-weight: 500;
@@ -21,6 +26,9 @@ img,
 svg {
   max-width: 100%;
   height: auto;
+}
+h1 {
+  font-size: 4.7vw;
 }
 h2 {
   font-size: 1.9vw;
@@ -47,9 +55,53 @@ h4 {
 }
 
 #header {
-  background-color: #00000a;
-  border-bottom: 1px solid #b1b1b1;
-  margin-bottom: 25px;
+  margin-top: 20px;
+  /* border-bottom: 1px solid #b1b1b1; */
+  margin-bottom: 130px;
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+.hero {
+  margin-bottom: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  h1 {
+    max-width: 950px;
+    margin-bottom: 32px;
+  }
+
+}
+.hero::after {
+  content: "";
+        position: absolute;
+        background: center/contain no-repeat;
+        z-index: -1;
+        width: 1890px;
+        height: 1545px;
+        background-image: url(/src/hero-back.svg);
+        
+}
+.buttonTG-hero {
+  margin-top: 48px;
+  border-radius: 1000px;
+padding: 8px 5px 8px 32px;
+background: white;
+height: 55px;
+color: black;
+display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+svg {
+    width: 48px;
+    height: 48px;
+  }
 }
 .container {
   display: flex;
@@ -121,6 +173,14 @@ h4 {
   .button-37 {
     margin-left: auto;
   }
+}
+.buttonTG {
+  background-color: initial;
+  background-image: linear-gradient(156deg, #f01616 0%, #f7710b 100%);;
+  border-radius: 200px;
+  padding: 12px 24px 12px 32px;
+  display: inline-flex;
+  align-items: center;
 }
 .button-37 {
   background-color: initial;
