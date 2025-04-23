@@ -19,14 +19,14 @@ body {
 }
 body::after {
   content: "";
-    position: absolute;
-    top: -13%;
-    left: 0;
-    width: 100%;
-    height: 200vh;
-    background: url('./src/hero-back.svg') 16% center / cover no-repeat;
-    z-index: -1;
-    height: -webkit-fill-available; 
+  position: absolute;
+  top: -13%;
+  left: 0;
+  width: 100%;
+  height: 200vh;
+  background: url("./src/hero-back.svg") 16% center / cover no-repeat;
+  z-index: -1;
+  height: -webkit-fill-available;
 }
 a {
   text-decoration: none;
@@ -420,7 +420,7 @@ button {
     }
   }
 }
-@media screen and (max-width: 1680.99px) { 
+@media screen and (max-width: 1680.99px) {
   body {
     padding: 0 150px;
   }
@@ -482,8 +482,7 @@ button {
   }
 }
 @media screen and (max-width: 1024.99px) {
-    .hero {
-    
+  .hero {
     h1 {
       font-size: 67px;
     }
@@ -495,7 +494,7 @@ button {
     top: -11%;
     height: 143vh;
     background: url(/src/hero-back.svg) 20% center / cover no-repeat;
-}
+  }
   .item-row {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -513,7 +512,26 @@ button {
       font-size: 2vw;
     }
   }
-
+  .about {
+    .about-us {
+      flex-direction: column;
+    }
+    img {
+      margin-left: 55%;
+      width: 34vw;
+    }
+    .text-wrapper {
+      h2 {
+        font-size: 3vw;
+      }
+      h4 {
+        font-size: 1.5vw;
+      }
+      p {
+        font-size: 2vw;
+      }
+    }
+  }
   .price-wrapper {
     margin-top: auto;
     h3 {
@@ -522,7 +540,6 @@ button {
   }
 }
 @media screen and (max-width: 767.99px) {
-
   .menu {
     display: none;
   }
@@ -531,6 +548,28 @@ button {
   }
   .container {
     gap: 10px;
+  }
+  .hero {
+    h1 {
+      font-size: 55px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .about {
+    .text-wrapper {
+      max-width: 75%;
+      h4 {
+        font-size: 2vw;
+      }
+      h2 {
+        font-size: 4vw;
+      }
+      p {
+        font-size: 2.5vw;
+      }
+    }
   }
   .swiper {
     width: 38vw;
@@ -568,14 +607,14 @@ button {
     top: -5%;
     height: 72vh;
     background: url(/src/hero-back.svg) 24% center / cover no-repeat;
-}
+  }
 }
 @media screen and (max-width: 575.99px) {
   body::after {
-        top: -9%;
-        height: 107vh;
-        background: url(/src/hero-back.svg) 25% center / cover no-repeat;
-    }
+    top: -9%;
+    height: 107vh;
+    background: url(/src/hero-back.svg) 25% center / cover no-repeat;
+  }
   .buttonTG {
     padding: 8px 12px 8px 12px;
     font-size: 14px;
@@ -628,15 +667,23 @@ button {
     .about-us {
       justify-content: space-between;
     }
-    h2 {
-      font-size: 3vw;
+    .text-wrapper {
+      max-width: 88%;
+      h2 {
+        font-size: 3vw;
+      }
+      h4 {
+        font-size: 4vw;
+      }
+      p {
+        font-size: 3vw;
+        margin-top: 0;
+      }
     }
-    p {
-      font-size: 2.4vw;
-      margin-top: 0;
-    }
+
     img {
-      width: 30vw;
+      width: 40vw;
+      margin-left: 45%;
     }
     .steps {
       .step:nth-child(2) {
@@ -674,28 +721,28 @@ button {
     }
   }
   .hero {
-        h1 {
-            font-size: 34px;
-        }
-            p {
-        font-size: 16px;
+    h1 {
+      font-size: 34px;
+    }
+    p {
+      font-size: 16px;
     }
     .buttonTG-hero {
-    padding: 5px 5px 5px 14px;
-    height: 39px;
-    gap: 7px;
-    font-size: 14px;
-    svg {
+      padding: 5px 5px 5px 14px;
+      height: 39px;
+      gap: 7px;
+      font-size: 14px;
+      svg {
         width: 32px;
         height: 32px;
-    }
-}
-    }
-    body::after {
-        top: -4%;
-        background: url('./src/hero-back.svg') 47% center / cover no-repeat;
-        height: 900px;
       }
+    }
+  }
+  body::after {
+    top: -4%;
+    background: url("./src/hero-back.svg") 47% center / cover no-repeat;
+    height: 900px;
+  }
   .modal {
     .modal-content {
       width: 80%;
