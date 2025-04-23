@@ -57,6 +57,7 @@ h4 {
 }
 .title-category {
   font-size: 4vw;
+  margin-top: 150px;
 }
 .swiper {
   width: 300px;
@@ -136,6 +137,7 @@ h4 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+  margin-bottom: 150px;
 }
 .item {
   border: 1px solid #333;
@@ -395,6 +397,7 @@ button {
 }
 .about {
   margin-top: 25px;
+    margin-bottom: 150px;
   img {
     max-width: 461px;
     width: 23vw;
@@ -413,14 +416,14 @@ button {
     font-size: 1.5vw;
   }
   .text-wrapper {
-    max-width: 714px;
-    max-width: 60%;
+    max-width: 690px;
   }
   .about-us {
     display: flex;
     justify-content: space-around;
     gap: 25px;
     margin-bottom: 25px;
+    align-items: center;
   }
   .steps-title {
     text-align: center;
@@ -437,7 +440,9 @@ button {
     .step {
       max-width: 34vw;
       margin-bottom: 30px;
-      border-left: 2px solid red;
+      border-left: 2px solid transparent; 
+  border-image: linear-gradient(352deg, #FFAA00 0%, #F03816 100%);
+  border-image-slice: 1;
       padding-left: 1vw;
       display: flex;
       flex-direction: column;
@@ -532,7 +537,7 @@ button {
     margin: 0px 10px;
   }
   .title-category {
-    font-size: 3vw;
+    font-size: 6vw;
 }
   .hero {
     h1 {
@@ -570,8 +575,7 @@ button {
       gap: 36px;
     }
     img {
-      margin-left: 55%;
-      width: 34vw;
+      width: 100%;
     }
     .text-wrapper {
       h2 {
@@ -718,6 +722,9 @@ button {
   }
 }
 @media screen and (max-width: 575.99px) {
+  .title-category {
+        font-size: 7vw;
+    }
   body::after {
     top: -4%;
     height: 900px;
