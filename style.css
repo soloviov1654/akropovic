@@ -10,11 +10,12 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  max-width: 1920px;
+  /* max-width: 1920px; */
   margin: 0 auto;
   position: relative;
   width: 100%;
   padding: 0 235px;
+  max-width: 100%;
 }
 body::after {
   content: "";
@@ -694,7 +695,9 @@ button {
         top: -4%;
         height: 62vh;
         background: url(/src/hero-back.svg) 47% center / cover no-repeat;
-    }
+        height: 300px;
+        background: red;
+      }
   .modal {
     .modal-content {
       width: 80%;
