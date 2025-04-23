@@ -672,6 +672,29 @@ button {
       font-size: 10px;
     }
   }
+  .hero {
+        h1 {
+            font-size: 34px;
+        }
+            p {
+        font-size: 16px;
+    }
+    .buttonTG-hero {
+    padding: 5px 5px 5px 14px;
+    height: 39px;
+    gap: 7px;
+    font-size: 14px;
+    svg {
+        width: 32px;
+        height: 32px;
+    }
+}
+    }
+    body::after {
+        top: -4%;
+        height: 62vh;
+        background: url(/src/hero-back.svg) 47% center / cover no-repeat;
+    }
   .modal {
     .modal-content {
       width: 80%;
