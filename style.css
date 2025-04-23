@@ -693,10 +693,8 @@ button {
     }
     body::after {
         top: -4%;
-        height: 62vh;
-        background: url(/src/hero-back.svg) 47% center / cover no-repeat;
-        height: 300px;
-        background: red;
+        background: url('./src/hero-back.svg') 47% center / cover no-repeat;
+        height: 900px;
       }
       body::before {
         display: flex;
