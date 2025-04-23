@@ -698,6 +698,16 @@ button {
         height: 300px;
         background: red;
       }
+      body::before {
+        display: flex;
+        content: "";
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 300px;
+        width: 300px;
+        background: rgb(0, 255, 42);
+      }
   .modal {
     .modal-content {
       width: 80%;
