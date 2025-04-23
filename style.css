@@ -515,6 +515,7 @@ button {
   .about {
     .about-us {
       flex-direction: column;
+      gap: 36px;
     }
     img {
       margin-left: 55%;
