@@ -512,8 +512,22 @@ button {
       margin-left: 0;
     }
   }
+  footer {
+    .footer-logo , img {
+      max-width: 280px;
+    }
+    
+  }
 }
 @media screen and (max-width: 1024.99px) {
+  footer {
+    .container-main {
+      li {
+      margin-bottom: 15px;
+    }
+    }
+    
+  }
   .container-main {
     margin: 0px 10px;
   }
@@ -579,6 +593,23 @@ button {
   }
 }
 @media screen and (max-width: 767.99px) {
+  footer {
+    .footer-logo , img {
+      max-width: 150px;
+    }
+    .container-main {
+      li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    p {
+      font-size: 12px;
+    }
+    a {
+            font-size: 14px;
+        }
+    }
+  }
   .menu {
     display: none;
   }
@@ -757,6 +788,16 @@ button {
   }
 }
 @media screen and (max-width: 481.99px) {
+  footer {
+    .container-main {
+      gap: 25px;
+      flex-wrap: wrap;
+      .footer-menu-row, 
+.footer-contacts-row {
+  flex: 1 1 100%; 
+}
+    }
+  }
   .filter-buttons {
     max-width: 275px;
     height: 45px;
