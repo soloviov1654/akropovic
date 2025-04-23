@@ -219,11 +219,43 @@ h4 {
   box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
 }
 footer {
-  margin-top: 15px;
-  background-color: #00000a;
-  border-top: 1px solid #b1b1b1;
-  height: 400px;
+  margin-top: 100px;
+  position: relative;
+  svg {
+    width: 1px;
+    height: 1px;
+  }
+  .container-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      font-size: 20px;
+      color: #817E7E;
+      max-width: 215px;
+    }
+    a {
+      font-size: 20px;
+    }
+    .time {
+      margin-top: 32px;
+    }
+    li {
+      font-size: 20px;
+      margin-bottom: 32px;
+    }
+  }
 }
+/* footer::after {
+  content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: url("./src/hero-back.svg") 1vw center / cover no-repeat;
+    z-index: -1;
+    height: 800px;
+} */
 [type="text"] {
   color: black;
   font-family: "Tektur", sans-serif;
