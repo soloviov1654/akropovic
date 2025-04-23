@@ -19,14 +19,14 @@ body {
 }
 body::after {
   content: "";
-  position: absolute;
-  top: -13%;
-  left: 0;
-  width: 100%;
-  height: 200vh;
-  background: url("./src/hero-back.svg") 16% center / cover no-repeat;
-  z-index: -1;
-  height: -webkit-fill-available;
+    position: absolute;
+    top: -8%;
+    left: 0;
+    width: 100%;
+    background: url("./src/hero-back.svg") 7vw center / cover no-repeat;
+    z-index: -1;
+    height: -webkit-fill-available;
+    height: 1800px;
 }
 a {
   text-decoration: none;
@@ -482,6 +482,12 @@ button {
   }
 }
 @media screen and (max-width: 1024.99px) {
+  .container-main {
+    margin: 0px 10px;
+  }
+  .title-category {
+    font-size: 3vw;
+}
   .hero {
     h1 {
       font-size: 67px;
@@ -490,11 +496,11 @@ button {
   body {
     padding: 0;
   }
-  body::after {
-    top: -11%;
-    height: 143vh;
-    background: url(/src/hero-back.svg) 20% center / cover no-repeat;
-  }
+      body::after {
+        top: -4%;
+        height: 1500px;
+        background: url("./src/hero-back.svg") 28% center / cover no-repeat;
+    }
   .item-row {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -559,18 +565,54 @@ button {
     }
   }
   .about {
-    .text-wrapper {
-      max-width: 75%;
+    .steps-title {
+      h2 , h3 {
+        font-size: 4.7vw;
+      }
       h4 {
         font-size: 2vw;
       }
-      h2 {
+    }
+    .steps {
+      .step {
+        h2 , h3 {
         font-size: 4vw;
       }
       p {
-        font-size: 2.5vw;
+        font-size: 18px;
+      }
       }
     }
+  }
+  .about {
+    .text-wrapper {
+      max-width: 100%;
+      h4 {
+        font-size: 3vw;
+      }
+      h2 {
+        font-size: 4.7vw;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+            img {
+            margin-left: 0;
+            width: 100%;
+        }
+        .steps {
+          .step {
+            max-width: 100%;
+          }
+          .step:nth-child(2) {
+            margin-left: 0;
+        }
+        .step:nth-child(3) {
+            margin-left: 0;
+        }
+
+        }
   }
   .swiper {
     width: 38vw;
@@ -601,20 +643,22 @@ button {
       font-size: 2.2vw;
     }
     .about-us {
-      gap: 5px;
+      gap: 10px;
+      align-items: center;
+
     }
   }
   body::after {
-    top: -5%;
-    height: 72vh;
-    background: url(/src/hero-back.svg) 24% center / cover no-repeat;
+    top: -2%;
+    height: 900px;
+    background: url("./src/hero-back.svg") 24% center / cover no-repeat;
   }
 }
 @media screen and (max-width: 575.99px) {
   body::after {
-    top: -9%;
-    height: 107vh;
-    background: url(/src/hero-back.svg) 25% center / cover no-repeat;
+    top: -4%;
+    height: 900px;
+    background: url("./src/hero-back.svg") 25% center / cover no-repeat;
   }
   .buttonTG {
     padding: 8px 12px 8px 12px;
@@ -628,9 +672,6 @@ button {
   }
   .item-row {
     gap: 8px;
-  }
-  .container-main {
-    margin: 0px 5px;
   }
   .price-wrapper {
     gap: 5px;
@@ -669,40 +710,42 @@ button {
       justify-content: space-between;
     }
     .text-wrapper {
-      max-width: 88%;
+      max-width: 100%;
       h2 {
-        font-size: 3vw;
+        font-size: 4vw;
       }
       h4 {
-        font-size: 4vw;
+        font-size: 2.7vw;
       }
       p {
         font-size: 3vw;
         margin-top: 0;
       }
     }
-
-    img {
-      width: 40vw;
-      margin-left: 45%;
-    }
-    .steps {
-      .step:nth-child(2) {
-        margin-left: 30%;
-      }
-
-      .step:nth-child(3) {
-        margin-left: 60%;
-      }
-    }
   }
 }
 @media screen and (max-width: 481.99px) {
+  .filter-buttons {
+    max-width: 275px;
+    height: 45px;
+    margin-bottom: 4%;
+    .filter-btn {
+            font-size: 16px;
+            padding: 8px 12px;
+            height: 32px;
+        }
+}
+  .title-category {
+        font-size: 7vw;
+    }
   .item {
     border-radius: 22px;
     img {
       border-radius: 25px;
     }
+        h4 {
+            font-size: 2.8vw;
+        }
   }
   .swiper {
     width: 37vw;
@@ -739,6 +782,25 @@ button {
       }
     }
   }
+   .about , .step {
+            h4 {
+                font-size: 3vw;
+            }
+            h2 , h3 {
+                font-size: 4.5vw;
+            }
+                        p {
+                font-size: 3.5vw;
+            }
+        
+    }
+        .about {
+        .steps-title {
+            h4 {
+                font-size: 2.5vw;
+            }
+        }
+    }
   body::after {
     top: -4%;
     background: url("./src/hero-back.svg") 47% center / cover no-repeat;
