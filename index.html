@@ -28,9 +28,9 @@
         <div id="mobile-container" class="mobile-container">
           <nav class="menu">
             <ul class="menu__list">
-              <li class="menu__item">
+              <!-- <li class="menu__item">
                 <a class="menu__link" href="#shop">Каталог</a>
-              </li>
+              </li> -->
               <li class="menu__item">
                 <a class="menu__link" href="#footer">Контакти</a>
               </li>
@@ -54,7 +54,9 @@
           </svg>
       </a>
     </section>
-    <img src="/src/Frame.png" alt="">
+    <div class="image-container">
+  <img src="/src/Frame.png" alt="">
+</div>
         <section class="about">
       <div class="container-main">
         <div class="about-us">
@@ -814,7 +816,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const title = item.querySelector('h2').textContent.toLowerCase();
         
         if (filterValue === 'all' || title.includes(filterValue)) {
-          item.style.display = 'block';
+          item.style.display = 'flex';
         } else {
           item.style.display = 'none';
         }

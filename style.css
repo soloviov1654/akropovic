@@ -14,7 +14,6 @@ body {
   margin: 0 auto;
   position: relative;
   width: 100%;
-  padding: 0 235px;
   max-width: 100%;
 }
 body::after {
@@ -27,6 +26,9 @@ body::after {
     z-index: -1;
     height: -webkit-fill-available;
     height: 1800px;
+}
+header , .hero , .about , .container-main , footer {
+  padding: 0 235px;
 }
 a {
   text-decoration: none;
@@ -133,7 +135,32 @@ h4 {
 .container-main {
   margin: 0 15px;
 }
+.image-container {
+    width: 100%;        /* Ширина на всю доступную область (без прокрутки) */
+    overflow: hidden;   /* Обрезаем всё, что выходит за границы */
+    display: flex;
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center;     /* Центрируем по вертикали */
+  }
+  
+  .image-container img {
+    max-height: 100%;   /* Максимальная высота — 100% контейнера */
+    max-width: 100%;    /* Максимальная ширина — 100% контейнера */
+    object-fit: contain; /* Вписываем картинку целиком (без обрезки) */
+  }
 
+  /* Если нужно именно обрезать края, а не сжимать картинку */
+  .image-container.img-cropped img {
+    object-fit: cover;  /* Заполняем контейнер с обрезкой краёв */
+    min-width: 100%;    /* Гарантируем, что ширина заполнит контейнер */
+    min-height: 100%;   /* Гарантируем, что высота заполнит контейнер */
+  }
+  .image-container img {
+  width: auto;          /* Ширина подстраивается */
+  height: 100%;         /* Высота фиксированная */
+  min-width: 100%;      /* Если картинка узкая — растянется */
+  object-fit: cover;    /* Обрезаем края */
+}
 .item-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -459,7 +486,7 @@ button {
   }
 }
 @media screen and (max-width: 1680.99px) {
-  body {
+  header , .hero , .about , .container-main , footer {
     padding: 0 150px;
   }
   .swiper {
@@ -491,7 +518,7 @@ button {
   }
 }
 @media screen and (max-width: 1199.99px) {
-  body {
+  header , .hero , .about , .container-main , footer {
     padding: 0 50px;
   }
   .item-row {
@@ -526,6 +553,10 @@ button {
   }
 }
 @media screen and (max-width: 1024.99px) {
+  .image-container img {
+    min-width: 110%;
+
+}
   footer {
     .container-main {
       li {
@@ -545,7 +576,7 @@ button {
       font-size: 67px;
     }
   }
-  body {
+  header , .hero , .about , .container-main , footer {
     padding: 0;
   }
       body::after {
@@ -554,6 +585,7 @@ button {
         background: url("./src/hero-back.svg") 28% center / cover no-repeat;
     }
   .item-row {
+    margin-bottom: 100px;
     grid-template-columns: repeat(2, 1fr);
   }
   .swiper {
@@ -571,6 +603,7 @@ button {
     }
   }
   .about {
+    margin-bottom: 100px;
     .about-us {
       flex-direction: column;
       gap: 36px;
@@ -598,7 +631,11 @@ button {
   }
 }
 @media screen and (max-width: 767.99px) {
+  .image-container img {
+        min-width: 145%;
+    }
   footer {
+    margin-bottom: 25px;
     .footer-logo , img {
       max-width: 150px;
     }
@@ -616,7 +653,7 @@ button {
     }
   }
   .menu {
-    display: none;
+    /* display: none; */
   }
   .menu__list {
     gap: 16px;
@@ -723,7 +760,11 @@ button {
   }
 }
 @media screen and (max-width: 575.99px) {
+  .image-container img {
+        min-width: 160%;
+    }
   .title-category {
+    margin-top: 70px;
         font-size: 7vw;
     }
   body::after {
@@ -779,6 +820,7 @@ button {
   .about {
     .about-us {
       justify-content: space-between;
+      gap: 45px;
     }
     .text-wrapper {
       max-width: 100%;
@@ -846,6 +888,7 @@ button {
     }
   }
   .hero {
+        margin-bottom: 70px;
     h1 {
       font-size: 34px;
     }
