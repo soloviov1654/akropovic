@@ -18,16 +18,20 @@ body {
 }
 body::after {
   content: "";
-    position: absolute;
-    top: -8%;
-    left: 0;
-    width: 100%;
-    background: url("./src/hero-back.svg") 7vw center / cover no-repeat;
-    z-index: -1;
-    height: -webkit-fill-available;
-    height: 1800px;
+  position: absolute;
+  top: -8%;
+  left: 0;
+  width: 100%;
+  background: url("./src/hero-back.svg") 7vw center / cover no-repeat;
+  z-index: -1;
+  height: -webkit-fill-available;
+  height: 1800px;
 }
-header , .hero , .about , .container-main , footer {
+header,
+.hero,
+.about,
+.container-main,
+footer {
   padding: 0 235px;
 }
 a {
@@ -75,10 +79,6 @@ h4 {
   margin-top: 20px;
   /* border-bottom: 1px solid #b1b1b1; */
   margin-bottom: 130px;
-  svg {
-    width: 24px;
-    height: 24px;
-  }
 }
 .hero {
   margin-bottom: 130px;
@@ -118,6 +118,10 @@ h4 {
   align-items: center;
   padding: 0 10px;
   justify-content: space-between;
+  svg {
+    width: 24px;
+    height: 24px;
+  }
 }
 .header-logo {
   max-width: 250px;
@@ -136,23 +140,23 @@ h4 {
   margin: 0 15px;
 }
 .image-container {
-    width: 100%;        /* Ширина на всю доступную область (без прокрутки) */
-    overflow: hidden;   /* Обрезаем всё, что выходит за границы */
-    display: flex;
-    justify-content: center; /* Центрируем по горизонтали */
-    align-items: center;     /* Центрируем по вертикали */
-  }
-  
-  .image-container img {
-    max-height: 100%;   /* Максимальная высота — 100% контейнера */
-    max-width: 100%;    /* Максимальная ширина — 100% контейнера */
-    object-fit: contain; /* Вписываем картинку целиком (без обрезки) */
-  }
-  .image-container img {
-  width: auto;          /* Ширина подстраивается */
-  height: 100%;         /* Высота фиксированная */
-  min-width: 100%;      /* Если картинка узкая — растянется */
-  object-fit: cover;    /* Обрезаем края */
+  width: 100%; /* Ширина на всю доступную область (без прокрутки) */
+  overflow: hidden; /* Обрезаем всё, что выходит за границы */
+  display: flex;
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center; /* Центрируем по вертикали */
+}
+
+.image-container img {
+  max-height: 100%; /* Максимальная высота — 100% контейнера */
+  max-width: 100%; /* Максимальная ширина — 100% контейнера */
+  object-fit: contain; /* Вписываем картинку целиком (без обрезки) */
+}
+.image-container img {
+  width: auto; /* Ширина подстраивается */
+  height: 100%; /* Высота фиксированная */
+  min-width: 100%; /* Если картинка узкая — растянется */
+  object-fit: cover; /* Обрезаем края */
 }
 .item-row {
   display: grid;
@@ -254,7 +258,7 @@ footer {
     align-items: center;
     p {
       font-size: 20px;
-      color: #817E7E;
+      color: #817e7e;
       max-width: 215px;
     }
     a {
@@ -418,7 +422,7 @@ button {
 }
 .about {
   margin-top: 25px;
-    margin-bottom: 150px;
+  margin-bottom: 150px;
   img {
     max-width: 461px;
     width: 23vw;
@@ -461,9 +465,9 @@ button {
     .step {
       max-width: 34vw;
       margin-bottom: 30px;
-      border-left: 2px solid transparent; 
-  border-image: linear-gradient(352deg, #FFAA00 0%, #F03816 100%);
-  border-image-slice: 1;
+      border-left: 2px solid transparent;
+      border-image: linear-gradient(352deg, #ffaa00 0%, #f03816 100%);
+      border-image-slice: 1;
       padding-left: 1vw;
       display: flex;
       flex-direction: column;
@@ -479,7 +483,11 @@ button {
   }
 }
 @media screen and (max-width: 1680.99px) {
-  header , .hero , .about , .container-main , footer {
+  header,
+  .hero,
+  .about,
+  .container-main,
+  footer {
     padding: 0 150px;
   }
   .swiper {
@@ -511,7 +519,11 @@ button {
   }
 }
 @media screen and (max-width: 1199.99px) {
-  header , .hero , .about , .container-main , footer {
+  header,
+  .hero,
+  .about,
+  .container-main,
+  footer {
     padding: 0 50px;
   }
   .item-row {
@@ -539,44 +551,46 @@ button {
     }
   }
   footer {
-    .footer-logo , img {
+    .footer-logo,
+    img {
       max-width: 280px;
     }
-    
   }
 }
 @media screen and (max-width: 1024.99px) {
   .image-container img {
     min-width: 110%;
-
-}
+  }
   footer {
     .container-main {
       li {
-      margin-bottom: 15px;
+        margin-bottom: 15px;
+      }
     }
-    }
-    
   }
   .container-main {
     margin: 0px 10px;
   }
   .title-category {
     font-size: 6vw;
-}
+  }
   .hero {
     h1 {
       font-size: 67px;
     }
   }
-  header , .hero , .about , .container-main , footer {
+  header,
+  .hero,
+  .about,
+  .container-main,
+  footer {
     padding: 0;
   }
-      body::after {
-        top: -4%;
-        height: 1500px;
-        background: url("./src/hero-back.svg") 28% center / cover no-repeat;
-    }
+  body::after {
+    top: -4%;
+    height: 1500px;
+    background: url("./src/hero-back.svg") 28% center / cover no-repeat;
+  }
   .item-row {
     margin-bottom: 100px;
     grid-template-columns: repeat(2, 1fr);
@@ -628,24 +642,25 @@ button {
     padding: 8px 12px 8px 14px;
   }
   .image-container img {
-        min-width: 145%;
-    }
+    min-width: 145%;
+  }
   footer {
     margin-bottom: 25px;
-    .footer-logo , img {
+    .footer-logo,
+    img {
       max-width: 150px;
     }
     .container-main {
       li {
-      margin-bottom: 8px;
-      font-size: 14px;
-    }
-    p {
-      font-size: 12px;
-    }
-    a {
-            font-size: 14px;
-        }
+        margin-bottom: 8px;
+        font-size: 14px;
+      }
+      p {
+        font-size: 12px;
+      }
+      a {
+        font-size: 14px;
+      }
     }
   }
   .menu {
@@ -667,7 +682,8 @@ button {
   }
   .about {
     .steps-title {
-      h2 , h3 {
+      h2,
+      h3 {
         font-size: 4.7vw;
       }
       h4 {
@@ -676,12 +692,13 @@ button {
     }
     .steps {
       .step {
-        h2 , h3 {
-        font-size: 4vw;
-      }
-      p {
-        font-size: 18px;
-      }
+        h2,
+        h3 {
+          font-size: 4vw;
+        }
+        p {
+          font-size: 18px;
+        }
       }
     }
   }
@@ -698,22 +715,21 @@ button {
         font-size: 18px;
       }
     }
-            img {
-            margin-left: 0;
-            width: 100%;
-        }
-        .steps {
-          .step {
-            max-width: 100%;
-          }
-          .step:nth-child(2) {
-            margin-left: 0;
-        }
-        .step:nth-child(3) {
-            margin-left: 0;
-        }
-
-        }
+    img {
+      margin-left: 0;
+      width: 100%;
+    }
+    .steps {
+      .step {
+        max-width: 100%;
+      }
+      .step:nth-child(2) {
+        margin-left: 0;
+      }
+      .step:nth-child(3) {
+        margin-left: 0;
+      }
+    }
   }
   .swiper {
     width: 38vw;
@@ -746,7 +762,6 @@ button {
     .about-us {
       gap: 10px;
       align-items: center;
-
     }
   }
   body::after {
@@ -760,20 +775,24 @@ button {
     gap: 32px;
   }
   .image-container img {
-        min-width: 160%;
-    }
+    min-width: 160%;
+  }
   .title-category {
     margin-top: 70px;
-        font-size: 7vw;
-    }
+    font-size: 7vw;
+  }
   body::after {
     top: -4%;
     height: 900px;
     background: url("./src/hero-back.svg") 25% center / cover no-repeat;
   }
   .buttonTG {
-    padding: 8px 12px 8px 12px;
+    padding: 4px 8px 4px 8px;
     font-size: 14px;
+    svg {
+      height: 22px;
+      max-width: 28px;
+    }
   }
   h4 {
     font-size: 2.3vw;
@@ -837,14 +856,25 @@ button {
   }
 }
 @media screen and (max-width: 481.99px) {
+  .container {
+    padding: 0 5px;
+    gap: 16px;
+  }
+  a.menu__link {
+    font-size: 12px;
+  }
+  .buttonTG {
+    padding: 2px 4px 2px 4px;
+    font-size: 10px;
+  }
   footer {
     .container-main {
       gap: 25px;
       flex-wrap: wrap;
-      .footer-menu-row, 
-.footer-contacts-row {
-  flex: 1 1 100%; 
-}
+      .footer-menu-row,
+      .footer-contacts-row {
+        flex: 1 1 100%;
+      }
     }
   }
   .filter-buttons {
@@ -852,22 +882,22 @@ button {
     height: 45px;
     margin-bottom: 4%;
     .filter-btn {
-            font-size: 16px;
-            padding: 8px 12px;
-            height: 32px;
-        }
-}
-  .title-category {
-        font-size: 7vw;
+      font-size: 16px;
+      padding: 8px 12px;
+      height: 32px;
     }
+  }
+  .title-category {
+    font-size: 7vw;
+  }
   .item {
     border-radius: 22px;
     img {
       border-radius: 25px;
     }
-        h4 {
-            font-size: 2.8vw;
-        }
+    h4 {
+      font-size: 2.8vw;
+    }
   }
   .swiper {
     width: 37vw;
@@ -887,7 +917,7 @@ button {
     }
   }
   .hero {
-        margin-bottom: 70px;
+    margin-bottom: 70px;
     h1 {
       font-size: 34px;
     }
@@ -905,25 +935,26 @@ button {
       }
     }
   }
-   .about , .step {
-            h4 {
-                font-size: 3vw;
-            }
-            h2 , h3 {
-                font-size: 4.5vw;
-            }
-                        p {
-                font-size: 3.5vw;
-            }
-        
+  .about,
+  .step {
+    h4 {
+      font-size: 3vw;
     }
-        .about {
-        .steps-title {
-            h4 {
-                font-size: 2.5vw;
-            }
-        }
+    h2,
+    h3 {
+      font-size: 4.5vw;
     }
+    p {
+      font-size: 3.5vw;
+    }
+  }
+  .about {
+    .steps-title {
+      h4 {
+        font-size: 2.5vw;
+      }
+    }
+  }
   body::after {
     top: -4%;
     background: url("./src/hero-back.svg") 47% center / cover no-repeat;
