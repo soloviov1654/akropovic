@@ -29,9 +29,7 @@ body::after {
 }
 header,
 .hero,
-.about,
-.container-main,
-footer {
+.container-main {
   padding: 0 235px;
 }
 a {
@@ -484,10 +482,8 @@ button {
 }
 @media screen and (max-width: 1680.99px) {
   header,
-  .hero,
-  .about,
-  .container-main,
-  footer {
+.hero,
+.container-main {
     padding: 0 150px;
   }
   .swiper {
@@ -520,10 +516,8 @@ button {
 }
 @media screen and (max-width: 1199.99px) {
   header,
-  .hero,
-  .about,
-  .container-main,
-  footer {
+.hero,
+.container-main {
     padding: 0 50px;
   }
   .item-row {
@@ -580,10 +574,8 @@ button {
     }
   }
   header,
-  .hero,
-  .about,
-  .container-main,
-  footer {
+.hero,
+.container-main {
     padding: 0;
   }
   body::after {
