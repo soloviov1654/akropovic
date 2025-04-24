@@ -138,23 +138,23 @@ h4 {
   margin: 0 15px;
 }
 .image-container {
-  width: 100%; /* Ширина на всю доступную область (без прокрутки) */
-  overflow: hidden; /* Обрезаем всё, что выходит за границы */
+  width: 100%; 
+  overflow: hidden; 
   display: flex;
-  justify-content: center; /* Центрируем по горизонтали */
-  align-items: center; /* Центрируем по вертикали */
+  justify-content: center; 
+  align-items: center; 
 }
 
 .image-container img {
-  max-height: 100%; /* Максимальная высота — 100% контейнера */
-  max-width: 100%; /* Максимальная ширина — 100% контейнера */
-  object-fit: contain; /* Вписываем картинку целиком (без обрезки) */
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 .image-container img {
-  width: auto; /* Ширина подстраивается */
-  height: 100%; /* Высота фиксированная */
-  min-width: 100%; /* Если картинка узкая — растянется */
-  object-fit: cover; /* Обрезаем края */
+  width: auto;
+  height: 100%;
+  min-width: 100%;
+  object-fit: cover;
 }
 .item-row {
   display: grid;
