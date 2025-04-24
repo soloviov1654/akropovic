@@ -148,13 +148,6 @@ h4 {
     max-width: 100%;    /* Максимальная ширина — 100% контейнера */
     object-fit: contain; /* Вписываем картинку целиком (без обрезки) */
   }
-
-  /* Если нужно именно обрезать края, а не сжимать картинку */
-  .image-container.img-cropped img {
-    object-fit: cover;  /* Заполняем контейнер с обрезкой краёв */
-    min-width: 100%;    /* Гарантируем, что ширина заполнит контейнер */
-    min-height: 100%;   /* Гарантируем, что высота заполнит контейнер */
-  }
   .image-container img {
   width: auto;          /* Ширина подстраивается */
   height: 100%;         /* Высота фиксированная */
@@ -631,6 +624,9 @@ button {
   }
 }
 @media screen and (max-width: 767.99px) {
+  .buttonTG {
+    padding: 8px 12px 8px 14px;
+  }
   .image-container img {
         min-width: 145%;
     }
@@ -760,6 +756,9 @@ button {
   }
 }
 @media screen and (max-width: 575.99px) {
+  .container {
+    gap: 32px;
+  }
   .image-container img {
         min-width: 160%;
     }
