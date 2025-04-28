@@ -18,6 +18,15 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3X678HV55V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3X678HV55V');
+</script>
   <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -35,6 +44,32 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1037214914999185&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+ <!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('D058QUJC77U9TS4J2TJG');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+ <!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('D059GARC77U9O1QRNTP0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
   </head>
   <body>
     <header id="header">
@@ -714,11 +749,21 @@ src="https://www.facebook.com/tr?id=1037214914999185&ev=PageView&noscript=1"
 
             <div class="form-group">
               <label for="phone">Номер телефону:</label>
-              <input type="tel" id="phone" name="phone" required />
+<input 
+  type="tel" 
+  id="phone" 
+  name="phone" 
+  maxlength="10" 
+  oninput="validatePhoneInput(this)" 
+  required
+/>
+<span id="phone-error" style=" display: none; ">
+  <h3 style="color: red ; font-size: 14px; font-weight: 400;">Формат: 0971234567</h3>
+</span>
             </div>
 
             <div class="form-group">
-              <label for="address">Адреса доставки:</label>
+              <label for="address">Місто та відділення доставки:</label>
               <textarea
                 id="address"
                 name="address"
@@ -761,6 +806,29 @@ src="https://www.facebook.com/tr?id=1037214914999185&ev=PageView&noscript=1"
       });
     </script>
     <script>
+  function validatePhoneInput(input) {
+    // Оставляем только цифры
+    input.value = input.value.replace(/[^0-9]/g, '');
+
+    // Показываем/скрываем ошибку в зависимости от длины
+    const errorElement = document.getElementById('phone-error');
+    const isValidLength = input.value.length === 10 ;
+
+    errorElement.style.display = isValidLength ? 'none' : 'block';
+  }
+
+  // Дополнительная проверка перед отправкой формы (если нужно)
+  document.querySelector('form').addEventListener('submit', function(e) {
+    const phoneInput = document.getElementById('phone');
+    const phoneValue = phoneInput.value;
+    
+    if (phoneValue.length !== 10 ) {
+      e.preventDefault(); // Остановка отправки формы
+      alert('Номер телефону повинен містити 10!');
+    }
+  });
+</script>
+    <script>
 
       document.querySelectorAll(".buyButton").forEach((button) => {
         button.addEventListener("click", function () {
@@ -788,7 +856,7 @@ src="https://www.facebook.com/tr?id=1037214914999185&ev=PageView&noscript=1"
           productName: document.getElementById("productName").value,
           firstName: document.getElementById("firstName").value,
           lastName: document.getElementById("lastName").value,
-          phone: document.getElementById("phone").value,
+          phone: `+38${document.getElementById("phone").value}`,
           address: document.getElementById("address").value,
           timestamp: new Date().toLocaleString(),
         };
