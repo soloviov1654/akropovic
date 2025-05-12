@@ -32,6 +32,19 @@ header,
 .container-main {
   padding: 0 235px;
 }
+select {
+  color: black;
+  font-family: "Tektur", sans-serif;
+  width: 45px;
+}
+select#quantity option {
+    color: black;
+  }
+.form-group-value {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 15px;
+}
 a {
   text-decoration: none;
   font-weight: 500;

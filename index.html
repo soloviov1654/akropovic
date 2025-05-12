@@ -809,7 +809,16 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
                 required
               ></textarea>
             </div>
-
+            <div class="form-group-value">
+        <label for="quantity">Кількість:</label>
+        <select id="quantity" name="quantity" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        
+      </div>
             <button type="submit">Замовити</button>
             
           </form>
@@ -896,6 +905,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
           lastName: document.getElementById("lastName").value,
           phone: `+38${document.getElementById("phone").value}`,
           address: document.getElementById("address").value,
+          quantity: document.getElementById("quantity").value,
           timestamp: new Date().toLocaleString(),
         };
 
