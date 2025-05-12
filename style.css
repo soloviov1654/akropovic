@@ -92,6 +92,30 @@ h4 {
     max-width: 950px;
     margin-bottom: 32px;
   }
+  .hero-d-fl {
+    display: flex;
+    gap: 24px;
+  }
+  .hero-socials {
+    margin-top: 48px;
+    display: flex;
+    gap: 12px;
+    a {
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 200px;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+    img {
+      height: 36px;
+      width: 36px;
+    }
+  }
 }
 .buttonTG-hero {
   margin-top: 48px;
@@ -138,11 +162,11 @@ h4 {
   margin: 0 15px;
 }
 .image-container {
-  width: 100%; 
-  overflow: hidden; 
+  width: 100%;
+  overflow: hidden;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
 .image-container img {
@@ -482,8 +506,8 @@ button {
 }
 @media screen and (max-width: 1680.99px) {
   header,
-.hero,
-.container-main {
+  .hero,
+  .container-main {
     padding: 0 150px;
   }
   .swiper {
@@ -516,8 +540,8 @@ button {
 }
 @media screen and (max-width: 1199.99px) {
   header,
-.hero,
-.container-main {
+  .hero,
+  .container-main {
     padding: 0 50px;
   }
   .item-row {
@@ -574,8 +598,8 @@ button {
     }
   }
   header,
-.hero,
-.container-main {
+  .hero,
+  .container-main {
     padding: 0;
   }
   body::after {
@@ -856,7 +880,7 @@ button {
     font-size: 12px;
   }
   .buttonTG {
-    padding: 2px 4px 2px 4px;
+    padding: 2px 4px 2px 8px;
     font-size: 10px;
   }
   footer {
@@ -926,6 +950,15 @@ button {
         height: 32px;
       }
     }
+    .hero-socials {
+      a {
+        height: 40px;
+        width: 40px;
+      }
+      img {
+        height: 26px;
+      }
+    }
   }
   .about,
   .step {
@@ -966,7 +999,7 @@ button {
     }
   }
 }
-@media screen and (max-width: 481.99px) { 
+@media screen and (max-width: 481.99px) {
   .mobile-container {
     display: none;
   }
