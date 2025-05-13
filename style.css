@@ -326,10 +326,12 @@ footer {
 [type="tel"] {
   color: black;
   font-family: "Tektur", sans-serif;
+  font-size: 16px;
 }
 #address {
   color: black;
   font-family: "Tektur", sans-serif;
+  font-size: 16px;
 }
 .modal {
   display: none;
