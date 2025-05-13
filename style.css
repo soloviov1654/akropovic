@@ -35,7 +35,7 @@ header,
 select {
   color: black;
   font-family: "Tektur", sans-serif;
-  width: 45px;
+  width: 50px;
 }
 select#quantity option {
     color: black;
@@ -321,6 +321,7 @@ footer {
 [type="text"] {
   color: black;
   font-family: "Tektur", sans-serif;
+  font-size: 16px;
 }
 [type="tel"] {
   color: black;
